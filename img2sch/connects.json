@@ -1,0 +1,142 @@
+[
+  {
+    "gate": "G$1",
+    "pin": "!ANT_SHORT!",
+    "pad": "P6"
+  },
+  {
+    "gate": "G$1",
+    "pin": "!RESET!",
+    "pad": "P49"
+  },
+  {
+    "gate": "G$1",
+    "pin": "!SAFEBOOT!",
+    "pad": "P50"
+  },
+  {
+    "gate": "G$1",
+    "pin": "ANT_DETECT",
+    "pad": "P4"
+  },
+  {
+    "gate": "G$1",
+    "pin": "ANT_OFF",
+    "pad": "P5"
+  },
+  {
+    "gate": "G$1",
+    "pin": "DIR",
+    "pad": "P23"
+  },
+  {
+    "gate": "G$1",
+    "pin": "D_SEL",
+    "pad": "P47"
+  },
+  {
+    "gate": "G$1",
+    "pin": "EXTINT",
+    "pad": "P51"
+  },
+  {
+    "gate": "G$1",
+    "pin": "GEO_FENCE_STAT",
+    "pad": "P19"
+  },
+  {
+    "gate": "G$1",
+    "pin": "GND",
+    "pad": "G1 G2 G3 G4 G5 G6 G7 G8 G9 G10 G11 G12 G13 G14 G15 G16 G17 G18 G19 G20 G21 G22 G23 G24 G25 G26 G27 G28 G29 G30 G31 G32 G33 G34 G35 G36 G37 G38 G39 G40 G41 G42 G43 G44 G45 G46 G47 G48 P1 P3 P12 P14 P32 P37 P41 P48"
+  },
+  {
+    "gate": "G$1",
+    "pin": "RF_IN",
+    "pad": "P2"
+  },
+  {
+    "gate": "G$1",
+    "pin": "RSVD",
+    "pad": "P8 P9 P10 P11 P13 P15 P16 P17 P18 P21 P24 P25 P28 P29 P30 P31 P35 P52 P54"
+  },
+  {
+    "gate": "G$1",
+    "pin": "RTK_STAT",
+    "pad": "P20"
+  },
+  {
+    "gate": "G$1",
+    "pin": "RX/MOSI",
+    "pad": "P43"
+  },
+  {
+    "gate": "G$1",
+    "pin": "RX2",
+    "pad": "P26"
+  },
+  {
+    "gate": "G$1",
+    "pin": "SCL/CLK",
+    "pad": "P45"
+  },
+  {
+    "gate": "G$1",
+    "pin": "SDA/!CS!",
+    "pad": "P44"
+  },
+  {
+    "gate": "G$1",
+    "pin": "TIMEPULSE",
+    "pad": "P53"
+  },
+  {
+    "gate": "G$1",
+    "pin": "TX/MISO",
+    "pad": "P42"
+  },
+  {
+    "gate": "G$1",
+    "pin": "TX2",
+    "pad": "P27"
+  },
+  {
+    "gate": "G$1",
+    "pin": "TX_READY",
+    "pad": "P46"
+  },
+  {
+    "gate": "G$1",
+    "pin": "USB_D+",
+    "pad": "P40"
+  },
+  {
+    "gate": "G$1",
+    "pin": "USB_D-",
+    "pad": "P39"
+  },
+  {
+    "gate": "G$1",
+    "pin": "VCC",
+    "pad": "P33 P34"
+  },
+  {
+    "gate": "G$1",
+    "pin": "V_BKCP",
+    "pad": "P36"
+  },
+  {
+    "gate": "G$1",
+    "pin": "V_RF",
+    "pad": "P7"
+  },
+  {
+    "gate": "G$1",
+    "pin": "V_USB",
+    "pad": "P38"
+  },
+  {
+    "gate": "G$1",
+    "pin": "WHEEL_TKS",
+    "pad": "P22"
+  }
+]
