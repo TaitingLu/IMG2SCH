@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WLMFVVN');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- mobile mode if small screen device -->
+    
+    <title>Sunny Buddy Solar Charger V13 Hookup Guide  - SparkFun Learn</title>
+
+          <link rel="canonical" href="https://learn.sparkfun.com/tutorials/sunny-buddy-solar-charger-v13-hookup-guide-/all">
+            
+    <link href="/css/bootstrap.min.css?rev=1753213525" rel="stylesheet">
+    <link rel="stylesheet" href="/css/theme.github.css?rev=1753213525" type="text/css" media="screen" />    <link rel="alternate" type="application/atom+xml" title="Education Blog" href="https://learn.sparkfun.com/feeds/blog" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorials" href="https://learn.sparkfun.com/feeds/tutorials" />
+    <link rel="alternate" type="application/atom+xml" title="Education Blog Comments" href="https://learn.sparkfun.com/feeds/blog_comments" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorial Comments" href="https://learn.sparkfun.com/feeds/tutorial_comments" />
+  </head>
+
+  <body id=learn class="layout-default no-type tutorials-view" ontouchstart="">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLMFVVN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <script>;</script>
+    <div class="wrapper" itemscope itemtype="http://schema.org/WebSite">
+      <meta itemprop="url" content="https://learn.sparkfun.com/">
+      <div class=wrapper-inner>
+
+    <header>
+  <div class="support-nav-container container-fluid hidden-xs">
+    <div class="container">
+      <div class="support-nav">
+        <div aria-hidden="true">&nbsp;</div>
+
+        <div>
+          <ul class="professional-links">
+            <li><a href="https://www.sparkfun.com/professional">Professional</a></li>
+            <li><a href="https://www.sparkfun.com/education">EDU</a>            <li><a href="https://www.sparkfun.com/become-a-distributor">Distributor</a>          </ul>
+        </div>
+
+        <div class="cs">
+          <a href="https://www.sparkfun.com/support">Customer Support</a>        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-nav-buttons container-fluid hidden-xs">
+    <div class="container">
+      <div class="tab-bar">
+        <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkfun.com/sparkx"><span class="sfe-icon-sparkx"><span class="sr-only">SparkX</span></span></a></li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header-content">
+      <div class="logo-container">
+        <button id="mobile-nav-menu-trigger" class="mobile-menu-button btn-unstyled hidden-sm hidden-md hidden-lg" type="button" aria-label="Open navigation menu">
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
+
+        <a class="logo" href="https://www.sparkfun.com/">
+          <span class="logo-sfe-primary"><span class="visuallyhidden">SparkFun Electronics - sparkfun.com</span></span>
+        </a>
+      </div>
+
+      <div class="search-block">
+                  <form id="search_form" class="search-block-form" action="https://learn.sparkfun.com/search/results" method="get">
+            <label for="global-search" class="sr-only">search documentation</label>
+            <input name="term" id="global-search" class="form-control" type="text" value="" placeholder="search documentation" autocomplete="off">
+            <button type="submit" class="glyphicon glyphicon-search global-search-icon" aria-label="Search"></button>
+          </form>
+        
+        <a href="https://www.sparkfun.com/" class="hidden-xs">Back to Webstore<span class="icon-header icon-header-undo" aria-hidden="true"></span></a>
+      </div>
+
+        <a class="account-link" href="https://www.sparkfun.com/customer/account">
+          <span class="img-account-silhouette visible-xs-inline-block"><span class="sr-only">My Account</span></span>
+          <span class="hidden-xs">My Account</span>
+        </a>
+
+    </div>
+  </div>
+
+  <div class="header-nav container-fluid hidden-xs">
+    <div class="container">
+      <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    </div>
+  </div>
+  <div id="nav-mobile-menu" class="nav-mobile-menu" aria-labelledby="nav-mobile-menu-heading" aria-role="dialog" aria-modal="true">
+    <h2 id="nav-mobile-menu-heading" class="sr-only">Navigation menu</h2>
+    <ul class="mobile-menu-tabs">
+      <li class="active"><a>Menu</a></li>
+      <li><a href="https://www.sparkfun.com/customer/account">Account</a></li>
+    </ul>
+    <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkfun.com/sparkx"><span class="sfe-icon-sparkx"><span class="sr-only">SparkX</span></span></a></li>
+</ul>
+  </div>
+</header>
+
+    
+    <div class=content>
+      <div class=container id=airlock>
+
+        
+        <div class=main-title>
+  <ul class="breadcrumb">
+    <li><a href="https://learn.sparkfun.com/">Home</a></li>
+    <li><a href="https://learn.sparkfun.com/tutorials">Tutorials</a></li>
+    <li>Sunny Buddy Solar Charger V13 Hookup Guide </li>
+      </ul>
+
+  <h1>
+    Sunny Buddy Solar Charger V13 Hookup Guide   </h1>
+
+</div>
+
+
+<a id=nav_toggle_pages class="nav_toggle nav-toggle-trigger" href="#"><span>&#8801;</span> Pages</a>
+
+<div id=tutorial class="row">
+
+  <div class="col-sm-8" id="sections">
+
+    <div class="contributors">
+                      Contributors:
+                <span class="contributor-alias"><img src="https://cdn.sparkfun.com/avatar/f4e195a7becacb6d86238db8c87e90f0?d=retro&s=20&r=pg" /> SFUptownMaker</span>          </div>
+
+    <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t313" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft313&name=Sunny+Buddy+Solar+Charger+V13+Hookup+Guide+" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft313" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=Sunny+Buddy+Solar+Charger+V13+Hookup+Guide+&url=http%3A%2F%2Fsfe.io%2Ft313&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft313&t=Sunny+Buddy+Solar+Charger+V13+Hookup+Guide+" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft313&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fr%2F500-1000%2Fassets%2Flearn_tutorials%2F3%2F1%2F3%2Fdefault.jpg&description=Sunny+Buddy+Solar+Charger+V13+Hookup+Guide+" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+          <div class="section tutorial-page">
+        <h2 id="introduction">Introduction</h2>
+        <div class="well">
+  <strong>Heads up!</strong> If you have an older version of the Sunny Buddy (<a href="https://www.sparkfun.com/products/12084">V1.0</a> and older), please refer to <a href="tutorials/170">this hookup guide</a>. For V1.3 and beyond, continue reading. Check the back of the board for the version number. 
+</div>
+
+<hr />
+
+<p>The <a href="https://www.sparkfun.com/products/12885">Sunny Buddy</a> is a small maximum power point tracking solar charger for single-cell LiPo batteries.</p>
+
+<!-- <div class="center-block text-center"> [![Product pic](https://cdn.sparkfun.com/assets/learn_tutorials/3/1/3/default.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/3/1/3/default.jpg) </div> -->
+
+
+
+<div >
+<div class="tile product-tile big grid " data-id="product-12885">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-sunny-buddy-mppt-solar-charger.html">
+        <img src="https://cdn.sparkfun.com/r/600-600/assets/parts/9/7/7/2/12885-01.jpg" alt="SparkFun Sunny Buddy - MPPT Solar Charger" height="600">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-sunny-buddy-mppt-solar-charger.html">
+          <span>SparkFun Sunny Buddy - MPPT Solar Charger</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-12885    </span>
+
+          <p class="description" style="display:none">
+        This is the Sunny Buddy, a maximum power point tracking (MPPT) solar charger for single-cell LiPo batteries. This MPPT solar &hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$32.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+
+<p>This tutorial will help you understand what the Sunny Buddy is, why it's useful, and how to use it.</p>
+
+<h3>Required Materials</h3>
+
+<p>The Sunny Buddy can't do anything without a supporting cast. Pair the Sunny Buddy with these buddies to make it work:</p>
+
+<ul>
+<li><p><strong>Solar Panel</strong> -- Most panels should work, just make sure they produce an output voltage between <strong>6-20V</strong>. Our <a href="https://www.sparkfun.com/products/7840">large</a> and <a href="https://www.sparkfun.com/products/9241">huge</a> panels will work. Our  <a href="https://www.sparkfun.com/products/7845">small</a> panels will work if you connect two of them in series (see the "Hooking It Up" page for details). The following panels with a center-positive barrel jack will be able to plug directly into the Sunny Buddy with ease.</p>
+
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid retired" data-id="product-13782">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/13782">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/1/3/4/9/13782-01.jpg" alt="Solar Panel - 3.5W" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/13782">
+          <span>Solar Panel - 3.5W</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-13782    </span>
+
+          <p class="description" style="display:none">
+        Have a project that needs some good power? Do you like free power provided by our friend, Mr. Sun? Check out this high qualit&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-13783">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/13783">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/1/3/5/0/13783-01.jpg" alt="Solar Panel - 6W" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/13783">
+          <span>Solar Panel - 6W</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-13783    </span>
+
+          <p class="description" style="display:none">
+        Have a project that needs some good power? Do you like free power provided by our friend, Mr. Sun? Check out this high qualit&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-13784">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/13784">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/1/3/5/1/13784-01.jpg" alt="Solar Panel - 9W" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/13784">
+          <span>Solar Panel - 9W</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-13784    </span>
+
+          <p class="description" style="display:none">
+        Have a project that needs some good power? Do you like free power provided by our friend, Mr. Sun? Check out this high qualit&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+</li>
+</ul>
+
+<div class="alert alert-info" role="alert">
+  <strong>Heads up!</strong> Under real world conditions, the Sunny Buddy may not be able to charge a LiPo battery sufficiently with the <a href="https://www.sparkfun.com/products/13781">small 2W</a> solar panel. The Sunny Buddy's output charge current measured was about <i>7mA</i> since the small 2W solar panel was not able to reach the minimum input voltage requirements by itself. We recommend using a larger solar panel like the <a href="https://www.sparkfun.com/products/13782">3.5W</a>, <a href="https://www.sparkfun.com/products/13783">6W</a>, or <a href="https://www.sparkfun.com/products/13784">9W</a> solar panels to achieve the Sunny Buddy's minimum voltage input requirements. 
+  </div>
+
+<!-- <div class="center-block text-center"> [![Solar Panel](https://cdn.sparkfun.com/r/400-400/assets/learn_tutorials/1/7/0/solar-panel.png)](https://cdn.sparkfun.com/assets/learn_tutorials/1/7/0/solar-panel.png) </div> -->
+
+<ul>
+<li><p><strong>LiPo Battery</strong> (single cell) -- The Sunny Buddy is intended to charge a single Polymer Lithium Ion cell. LiPo's come in all shapes and sizes, we recommend you use one with a capacity greater than 450mAh (e.g. <a href="https://www.sparkfun.com/products/341">850mAh</a>, <a href="https://www.sparkfun.com/products/339">1000mAh</a>, or <a href="https://www.sparkfun.com/products/8483">2000mAh</a>). Batteries like those, with a JST termination, will plug directly into the Sunny Buddy. The 450mAh size suggestion is due to the charge rate of the Sunny Buddy--most LiPo cells don't like being charged faster than their equivalent capacity.</p>
+
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid " data-id="product-13854">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/lithium-ion-battery-850mah.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/1/4/6/1/13854-01.jpg" alt="Lithium Ion Battery - 850mAh" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/lithium-ion-battery-850mah.html">
+          <span>Lithium Ion Battery - 850mAh</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-13854    </span>
+
+          <p class="description" style="display:none">
+        These are very slim, extremely light weight batteries based on Lithium Ion chemistry. Each cell outputs a nominal 3.7V at 850&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$13.61</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-13855">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/lithium-ion-battery-2ah.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/1/4/6/2/13855-01.jpg" alt="Lithium Ion Battery - 2Ah" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/lithium-ion-battery-2ah.html">
+          <span>Lithium Ion Battery - 2Ah</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-13855    </span>
+
+          <p class="description" style="display:none">
+        These are very slim, extremely light weight batteries based on Lithium Ion chemistry. Each cell outputs a nominal 3.7V at 200&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$19.41</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-13856">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/lithium-ion-battery-6ah.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/1/4/6/3/13856-01.jpg" alt="Lithium Ion Battery - 6Ah" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/lithium-ion-battery-6ah.html">
+          <span>Lithium Ion Battery - 6Ah</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-13856    </span>
+
+          <p class="description" style="display:none">
+        If you need some juice, this 6Ah Lithium Ion Battery is for you. These are very compact batteries based on Lithium Ion chemis&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$48.44</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-13813">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/13813">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/1/4/0/1/13813-01.jpg" alt="Lithium Ion Battery - 1Ah" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/13813">
+          <span>Lithium Ion Battery - 1Ah</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-13813    </span>
+
+          <p class="description" style="display:none">
+        Slim, extremely light weight batteries based on Lithium Ion chemistry. Each cell outputs a nominal 3.7V at 1000 mAh!      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+</li>
+</ul>
+
+<!-- <div class="center-block text-center"> [![A LiPo battery](https://cdn.sparkfun.com/r/400-400/assets/learn_tutorials/1/7/0/lipo-battery.png)](https://cdn.sparkfun.com/assets/learn_tutorials/1/7/0/lipo-battery.png) </div> -->
+
+<ul>
+<li><strong>A Load</strong> -- Your battery has to power <em>something</em>, right? Your load can be anything from an <a href="https://learn.sparkfun.com/tutorials/light-emitting-diodes-leds">LED</a> to an <a href="https://learn.sparkfun.com/tutorials/getting-started-with-the-redbot">Arduino-powered robot</a>.</li>
+</ul>
+
+<h3>Suggested Reading</h3>
+
+<p>Here are some other tutorials you may find useful before delving into this hookup guide:</p>
+
+<ul>
+<li><a href="https://learn.sparkfun.com/tutorials/battery-technologies">Batteries</a> -- Check out the battery tutorial for some help understanding why the Sunny Buddy works only with LiPo batteries.</li>
+<li><a href="https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law">Electricity Basics</a> -- It may be useful to review how current and voltage combine to transmit power to a load.</li>
+<li><a href="https://learn.sparkfun.com/tutorials/how-to-power-a-project">How to Power Your Project</a> -- Solar power and batteries are just one of many ways to power your project. Make sure to consider all possibilities!</li>
+<li>
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-27">
+  <a href="https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/2/7/ohmThumb.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Voltage, Current, Resistance, and Ohm's Law</h3>
+      </a>
+
+      <div class="description">
+      Learn about Ohm's Law, one of the most fundamental equations in all electrical engineering.     </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-28">
+  <a href="https://learn.sparkfun.com/tutorials/battery-technologies">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/a/6/5/e/f/5114447cce395f697e000009.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Battery Technologies</h3>
+      </a>
+
+      <div class="description">
+      The basics behind the batteries used in portable electronic devices: LiPo, NiMH, coin cells, and alkaline.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-36">
+  <a href="https://learn.sparkfun.com/tutorials/how-to-power-a-project">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/3/6/Bench_Power_Supply.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">How to Power a Project</h3>
+      </a>
+
+      <div class="description">
+      A tutorial to help figure out the power requirements of your project.    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+</li>
+</ul>      </div>
+          <div class="section tutorial-page">
+        <h2 id="why-mppt">Why MPPT?</h2>
+        <p>The Sunny Buddy is a maximum power point transfer (MPPT) solar charger. Why does that matter? What makes it worth having in a circuit? The answers lay ahead.</p>
+
+<h4>How Batteries Are Charged</h4>
+
+<p>Battery charging is a current dependent action, not a voltage dependent action. Battery chargers monitor the current flowing into the battery and limit it to some set value, chosen to prevent damage to the battery. An ideal battery charger will provide as much current to the battery as it is capable of drawing from its power supply, but no more than the battery can handle.</p>
+
+<h4>Power Supply Behavior</h4>
+
+<p>Consider the first part of that last sentence: "as much current as it is capable of drawing from its power supply." I've collected some data from five different power supplies: a <a href="https://www.sparkfun.com/products/8483">2000 mAh LiPo battery</a>, a bench supply, our <a href="https://www.sparkfun.com/products/7845">small solar cell</a>, our <a href="https://www.sparkfun.com/products/7840">large solar cell</a>, and the Sunny Buddy attached to the small cell in full Colorado sunlight (albeit in midwinter).</p>
+
+<p>-> <a href="https://cdn.sparkfun.com/assets/4/0/0/c/9/52e84215ce395fcf468b4568.png"><img src="https://cdn.sparkfun.com/r/600-600/assets/4/0/0/c/9/52e84215ce395fcf468b4568.png" alt="Load testing results of various supplies" /></a></p>
+
+<p><div class="center-block text-center"> <em>That's some mighty fine data!</em> </div></p>
+
+<p>The chart compares output voltage versus load current for the five sources listed above: in short, how much current each is capable of providing. For a sort of baseline comparison, note that the output of the bench supply, the battery, and the Sunny Buddy are pretty flat. You can clearly see the point at about 240mA where the Sunny Buddy could no longer safely draw more current from the solar cell. In a charging application, that's the point at which it would have settled in and charged the battery. Since I was actively increasing the load to stress the supplies, it folded back to a lower voltage to gracefully handle the excessive load without bursting into flames.</p>
+
+<p>The solar cells, however, behave quite differently. They slowly droop until they reach a certain point, then decline increasingly rapidly until even a small increase in current draw causes the output voltage to plummet. There's a point on that curve, in the "knee" region, where the power transferred to the load is at its peak. This point, called the <strong>maximum power point</strong>, is crucial to squeezing the most efficiency out of a solar cell.</p>
+
+<p>Finding that point is the key here. The solar cell curves will be compressed along the X-axis in lower light conditions, and, while the unloaded voltage may remain quite high even in low light, the amount of current which can be drawn from the cell decreases rapidly with the amount of light available.</p>
+
+<p>The Sunny Buddy locks in on that point in the curve, pulling the maximum current the cell will provide, but no more, and turning it into charge current. The circled region of the graph shows this: the highest current the small solar cell can deliver is around 180mA, but the Sunny Buddy pushes out 240mA before entering current limit. That's an extra 33% more charge current available to your battery over a comparable 5V charger.</p>
+
+<h4>Efficiency</h4>
+
+<p>Efficiency in any power supply system can be said to be the ratio of power out to power in. This is another place where the Sunny Buddy is better than comparable linear solutions.</p>
+
+<p>The Sunny Buddy is a switching supply; the output power is given by the equation <code>Pout = Pin * Efficiency</code>. The Sunny Buddy's efficiency has repeatedly measured to be about 80% in tests.</p>
+
+<p>Let's consider a linear solution. To avoid getting too far into that steep region of the graph, we'll set our charge current at 160mA. To calculate the output efficiency, we divided the output power by the input power. Looking at the voltage on the solar cell curve, we see that for 160mA the output voltage is about 7V; thus, input power is <code>7V * 160mA = 1142mW</code>. Output power is <code>4.2V * 160mA = 672mW</code>. That's the approximate charge voltage times the charge current. Efficiency is power in over power out: <code>672/1142 = 59%</code>. Best case, that's the percentage of the electric power generated by the cell that you're using. It will actually be lower when the cell voltage is lower than 4.2V, which it will be over most of the charging range.</p>
+
+<p>Here, again, Sunny Buddy wins: it's using (at least) 20% more of the available power from the solar cell.</p>
+
+<h4>Cloudy Days</h4>
+
+<p>But what happens to our linear charge circuit when the sun goes behind a cloud? As I mentioned earlier, as available solar energy decreases, the graph compresses along the X-axis. If that steep region drops below the set current of our charger, things go pear-shaped fast. The available voltage plummets, and the charger stops working.</p>
+
+<p>We can combat that by either setting a lower charge current in the first place, which isn't ideal because it means on a good, sunny day, you're losing a lot of potential solar energy by not loading the solar cell heavily enough, or by servoing our charge current to the voltage, reducing or increasing it based on the cell voltage. While that may sound simple, in practice it's quite complex.</p>
+
+<h4>Enter the Sunny Buddy</h4>
+
+<p>The Sunny Buddy does just that: it monitors the cell voltage and stops drawing current when the voltage droop indicates the cell is being pushed a little too far. Furthermore, since the Sunny Buddy uses a switching topology rather than a linear topology, it has a better efficiency than any linear solution can provide.</p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="hooking-it-up">Hooking It Up</h2>
+        <p>There are three parts to consider when embedding the Sunny Buddy into a project:</p>
+
+<ul>
+<li>Solar Panel Input</li>
+<li>Battery Output</li>
+<li>Load</li>
+</ul>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/7/0/sunny-buddy-hookup_2_1000w.png"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/1/7/0/sunny-buddy-hookup_2_1000w.png" alt="Sunny Buddy Hookup" /></a> </div></p>
+
+<h3>Solar Panel Input</h3>
+
+<p>The input side of the Sunny Buddy comes with a common barrel jack installed. <!-- SparkFun's [small](https://www.sparkfun.com/products/7845), [large](https://www.sparkfun.com/products/7840), and [huge](https://www.sparkfun.com/products/9241) solar panels all come with this sort of jack installed, and can be plugged directly into the Sunny Buddy's female barrel jack. --></p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/3/1/3/input_map.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/1/3/input_map.jpg" alt="Input diagram" /></a> </div></p>
+
+<p>The following solar panels can be plugged directly in to the Sunny Buddy's female barrel jack with ease.</p>
+
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid retired" data-id="product-13782">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/13782">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/1/3/4/9/13782-01.jpg" alt="Solar Panel - 3.5W" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/13782">
+          <span>Solar Panel - 3.5W</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-13782    </span>
+
+          <p class="description" style="display:none">
+        Have a project that needs some good power? Do you like free power provided by our friend, Mr. Sun? Check out this high qualit&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-13783">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/13783">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/1/3/5/0/13783-01.jpg" alt="Solar Panel - 6W" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/13783">
+          <span>Solar Panel - 6W</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-13783    </span>
+
+          <p class="description" style="display:none">
+        Have a project that needs some good power? Do you like free power provided by our friend, Mr. Sun? Check out this high qualit&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-13784">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/13784">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/1/3/5/1/13784-01.jpg" alt="Solar Panel - 9W" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/13784">
+          <span>Solar Panel - 9W</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-13784    </span>
+
+          <p class="description" style="display:none">
+        Have a project that needs some good power? Do you like free power provided by our friend, Mr. Sun? Check out this high qualit&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+
+<div class="alert alert-info" role="alert">
+  <strong>Heads up!</strong> Under real world conditions, the Sunny Buddy may not be able to charge a LiPo battery sufficiently with the <a href="https://www.sparkfun.com/products/13781">small 2W</a> solar panel. The Sunny Buddy's output charge current measured was about <i>7mA</i> since the small 2W solar panel was not able to reach the minimum input voltage requirements by itself. We recommend using a larger solar panel like the <a href="https://www.sparkfun.com/products/13782">3.5W</a>, <a href="https://www.sparkfun.com/products/13783">6W</a>, or <a href="https://www.sparkfun.com/products/13784">9W</a> solar panels to achieve the Sunny Buddy's minimum voltage input requirements. 
+</div>
+
+<p>There are also additional footprints for attaching <a href="https://www.sparkfun.com/products/8084">3.5mm screw terminals</a> or an additional <a href="https://www.sparkfun.com/products/119">barrel jack</a> to the board.</p>
+
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid " data-id="product-119">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/dc-barrel-power-jack-connector.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/0/8/00119-03-L.jpg" alt="DC Barrel Power Jack/Connector" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/dc-barrel-power-jack-connector.html">
+          <span>DC Barrel Power Jack/Connector</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-00119    </span>
+
+          <p class="description" style="display:none">
+        DC power jack/connector. This is a common barrel-type power jack for DC wall supplies. These are compatible with our DC wall &hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$1.75</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-8084">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/screw-terminals-3-5mm-pitch-2-pin.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/6/5/7/08084-01.jpg" alt="Screw Terminals 3.5mm Pitch (2-Pin)" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/screw-terminals-3-5mm-pitch-2-pin.html">
+          <span>Screw Terminals 3.5mm Pitch (2-Pin)</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-08084    </span>
+
+          <p class="description" style="display:none">
+        Screw Terminal 3.5mm pitch pins with slide-locking together to form any size you need. Rated up to 125V @ 6A, and can accept &hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$1.25</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+
+<p>Please note that if you intend to use two solar panels, you <strong>must</strong> clear solder jumper <strong>JP1</strong> (it ships closed by default) and close solder jumper JP2 (it ships open by default). Failure to do this will result in the second supply being left unconnected. If <em>both</em> jumpers are left unconnected, no power will be sent to the board. If both jumpers are <em>shorted</em>, the second panel will be shorted out and contribute no power to the system but may be damaged by being short circuited.</p>
+
+<p>The maximum recommended input to the board is <strong>20V</strong>; this is a stack of two of our panels. The minimum is <strong>6V</strong>, but most solar panels should be above this.</p>
+
+<p>A useful trick for monitoring the input current of a single-panel system is to open JP1 and close JP2, then <a href="https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter#measuring-current">connect an ammeter</a> between the <strong>+</strong> pads on the two 3.5mm footprints. This will allow you to monitor the current draw from the solar panel. <strong>Note that JP1 must be resoldered and JP2 reopened before attempting to use the SunnyBuddy without the meter in place!</strong></p>
+
+<h3>Setting the Input Current Limit</h3>
+
+<p>The revised Sunny Buddy has an input set point potentiometer. This allows the user to set an input voltage at which the Sunny Buddy will reduce its current draw to maintain peak power input from the solar panel.</p>
+
+<p>You'll want the voltage at this node to be at 2.7V when the solar panel is at the "knee" voltage we discussed in the <strong>Why MPPT?</strong> section above. Some solar cell manufacturers may give you this information; the manufacturers of our panels, however, have not. You can either take the hard road and characterize your cell (ick) or take the easy road and make an educated guess that the MPPT point will be at about 90% of the voltage you see when you're in full sun.</p>
+
+<p>To find that point, plug your solar panel into the Sunny Buddy, but don't put a battery or load on it. Measure the voltage from the "SET" pad to the "GND" pad next two it, and tweak the potentiometer until that voltage is about 3V. At that point, the Sunny Buddy will draw current until either 450mA is going to the load and the battery <strong>or</strong> the solar cell voltage is 90% of its full-sun open-circuit nominal voltage.</p>
+
+<h3>Battery Output</h3>
+
+<p>The output of the Sunny Buddy is intended to charge a single Polymer Lithium Ion cell. A 2-pin JST connector is populated, and will mate up to most of the LiPo batteries SparkFun sells.The load should be connected in parallel with the battery; again, footprints for a 3.5mm terminal or a standard .1" spaced header have been provided.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/3/1/3/output_tour.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/1/3/output_tour.jpg" alt="Output diagram" /></a> </div></p>
+
+<p>The charge current is set by resistor R1 in the schematic. By default it comes set to a maximum charge current of <strong>450mA</strong>. It's recommended that batteries not be charged at greater than their capacity rating; thus, the smallest battery that should be charged with the Sunny Buddy is 450mAh.</p>
+
+<p>The revised Sunny Buddy adds an additional sense resistor footprint in parallel with the built-in resistor. The charge current is equal to .1/(R1||RSen); putting a 1-ohm resistor on the Rsen pads will increase the charge current to ~550mA. R1 can be desoldered from the board if charge currents below 450mA are desired.</p>
+
+<p>Note that it is possible to set the charge current to impossible levels. If the current level is too high, the inductor will saturate, which will limit the output current artificially.</p>
+
+<p>Finally, note that there's a jumper on the board that can be cut to allow you to monitor the output current of the charger. You'll need to reconnect the jumper pads after you've finished taking measurements.</p>
+
+<h3>The Load</h3>
+
+<p>The load can be connected to either the 0.1" or 3.5mm spaced pads on the right edge of the board.</p>
+
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid " data-id="product-116">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/break-away-headers-straight.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/0/6/00116-02-L.jpg" alt="Break Away Headers - Straight" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/break-away-headers-straight.html">
+          <span>Break Away Headers - Straight</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-00116    </span>
+
+          <p class="description" style="display:none">
+        A row of headers - break to fit. 40 pins that can be cut to any size. Used with custom PCBs or general custom headers.      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$1.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-14574">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/led-strip-pigtail-connector-2-pin.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/7/1/9/14574-LED_Pigtail_connector_2_Pin_-01.jpg" alt="LED Strip Pigtail Connector (2-pin)" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/led-strip-pigtail-connector-2-pin.html">
+          <span>LED Strip Pigtail Connector (2-pin)</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      CAB-14574    </span>
+
+          <p class="description" style="display:none">
+        These 2-pin JST-SM pigtail connectors mate perfectly with LED strips and other applications that require only two lines and a&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$1.25</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-115">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/female-headers.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/0/5/00115-03-L.jpg" alt="Female Headers" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/female-headers.html">
+          <span>Female Headers</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-00115    </span>
+
+          <p class="description" style="display:none">
+        Single row of 40-holes, female header. Can be cut to size with a pair of wire-cutters. Standard .1" spacing. We use them exte&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$1.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-8084">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/screw-terminals-3-5mm-pitch-2-pin.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/6/5/7/08084-01.jpg" alt="Screw Terminals 3.5mm Pitch (2-Pin)" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/screw-terminals-3-5mm-pitch-2-pin.html">
+          <span>Screw Terminals 3.5mm Pitch (2-Pin)</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-08084    </span>
+
+          <p class="description" style="display:none">
+        Screw Terminal 3.5mm pitch pins with slide-locking together to form any size you need. Rated up to 125V @ 6A, and can accept &hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$1.25</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+
+<p>It's important that the load not be too heavy; since it is in parallel with the battery, it will steal some of the charge current from the battery when it is operating.</p>
+
+<p>To avoid this, <a href="https://learn.sparkfun.com/tutorials/reducing-arduino-power-consumption">consider putting active circuitry to sleep</a> whenever possible, or using a microcontroller to turn parts of the load on or off as they are not needed. Methods for doing this are beyond the scope of this tutorial.</p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="resources--going-further">Resources and Going Further</h2>
+        <p>If you're looking to get more out of your Sunny Buddy, be sure to check out these resources first:</p>
+
+<ul>
+<li><a href="https://cdn.sparkfun.com/datasheets/Prototyping/SunnyBuddyv10.pdf">Sunny Buddy Schematic</a> -- A PDF of the Sunny Buddy schematic.</li>
+<li><a href="https://cdn.sparkfun.com/datasheets/Prototyping/SunnyBuddyv10.zip">Sunny Buddy Eagle Files</a> -- The PCB design files.</li>
+<li><a href="https://cdn.sparkfun.com/datasheets/Prototyping/LT3652.pdf">LT3652 Datasheet</a> -- Everything you could ever want to know about the Linear Tech LT3652, the peak-power tracking, battery charging soul of the Sunny Buddy.</li>
+<li><a href="https://github.com/sparkfun/SunnyBuddy">Sunny Buddy GitHub Repo</a> -- Your source for the latest and greatest design files.</li>
+</ul>
+
+<p>If you're looking for some inspiration for a project that you can embed the Sunny Buddy into, check out some of these related tutorials and projects:</p>
+
+<ul>
+<li><p><a href="https://learn.sparkfun.com/tutorials/gps-basics">GPS Basics</a> -- If your project is outdoors (a safe assumption if you're using the Buddy), consider adding GPS to it. It's not as hard as you think!</p>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile big grid " data-id="tutorial-9">
+  <a href="https://learn.sparkfun.com/tutorials/gps-basics">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/500-282/assets/3/6/6/f/7/50edfc17ce395f7105000000.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">GPS Basics</h3>
+    <div class="metaline">December 14, 2012</div>  </a>
+
+      <div class="description">
+      The Global Positioning System (GPS) is an engineering marvel that we all have access to for a relatively low cost and no subscription fee. With the correct hardware and minimal effort, you can determine your position and time almost anywhere on the globe.     </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+</li>
+<li><p><a href="https://learn.sparkfun.com/tutorials/weather-station-wirelessly-connected-to-wunderground">Weather Station Wirelessly Connected to Wunderground</a> -- The Sunny Buddy plays an important role in keeping this <a href="https://www.sparkfun.com/products/11395">Electric Imp</a>-driven, wireless weather station humming.</p></li>
+</ul>
+
+<!-- <div class="center-block text-center"> [![Wimp in action](https://cdn.sparkfun.com/r/500-500/assets/learn_tutorials/2/1/7/Setup-4.jpg)](tutorials/217) </div> 
+
+<div class="center-block text-center"> _The Wimp in action!_ </div> -->
+
+
+<div class="tile-wrap">
+  </div>
+
+  <div class="clearfix"></div>
+
+
+<ul>
+<li><p>Or check out SparkFun's project spotlight on the <a href="https://github.com/sparkfun/Rogue_Router">SparkFun Rogue Router for a Solar Powered File Server</a> with the ESP8266:</p>
+
+<div class="flex-video-wrap clearfix">
+  <div class="flex-video widescreen img">
+    <iframe src="https://www.youtube.com/embed/xpUkHZlg948/?autohide=1&amp;border=0&amp;wmode=opaque&amp;enablejsapi=1" frameborder=0 allowfullscreen width="560" height="315"></iframe>
+  </div>
+</div>
+</li>
+</ul>
+
+<p>You can also check out this blog post for more ideas:</p>
+
+
+<div class="tile-wrap">
+  <div class="tile blog-tile " data-id="news-2772">
+  <a href="https://news.sparkfun.com/2772" title="September 10, 2018: Tired of paying The Man for your power? Before you go off-grid, this is the video you want to see. We'll give you the background on solar cell function and performance, and talk about some of the other parts you'll need to get the job done.">
+              <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/338-190/assets/home_page_posts/2/7/7/2/Thumb__8_.jpg)"></div>
+        <h3 class="title">ATP: How Solar Cells Work</h3>
+          <div class="metaline">
+        <span class="meta">September 10, 2018</span>
+      </div>
+        <p class="readmore">Read Post</p>
+      </a>
+  </div>
+<div class="tile blog-tile " data-id="news-3081">
+  <a href="https://news.sparkfun.com/3081" title="August 29, 2019: This summer I went on a tear setting up connected devices in my house with one goal; simplifying the mundane tasks of owning a house. The whole project has got me automating as much as I can, but also non-connected solutions are springing up as well. In this Enginursday, I build a roof over my new connected outdoor outlet.">
+              <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/338-190/assets/home_page_posts/3/0/8/1/IMG_9613.jpg)"></div>
+        <h3 class="title">Enginursday: 3D Printed Housing Fixtures</h3>
+          <div class="metaline">
+        <span class="meta">August 29, 2019</span>
+      </div>
+        <p class="readmore">Read Post</p>
+      </a>
+  </div>
+</div>
+
+  <div class="clearfix"></div>      </div>
+    
+        <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t313" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft313&name=Sunny+Buddy+Solar+Charger+V13+Hookup+Guide+" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft313" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=Sunny+Buddy+Solar+Charger+V13+Hookup+Guide+&url=http%3A%2F%2Fsfe.io%2Ft313&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft313&t=Sunny+Buddy+Solar+Charger+V13+Hookup+Guide+" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft313&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fr%2F500-1000%2Fassets%2Flearn_tutorials%2F3%2F1%2F3%2Fdefault.jpg&description=Sunny+Buddy+Solar+Charger+V13+Hookup+Guide+" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+  </div>
+
+  <div class="col-sm-4 nav-menu" id="nav-pages">
+    <div id="sidebar_affix">
+      <div id="tutorial-pages" class="list-group">
+        <a class="list-group-item"><b>Sections</b></a>
+                          <a data-pagename="introduction" class="list-group-item" href="#introduction">
+            Introduction          </a>
+                  <a data-pagename="why-mppt" class="list-group-item" href="#why-mppt">
+            Why MPPT?          </a>
+                  <a data-pagename="hooking-it-up" class="list-group-item" href="#hooking-it-up">
+            Hooking It Up          </a>
+                  <a data-pagename="resources--going-further" class="list-group-item" href="#resources--going-further">
+            Resources and Going Further          </a>
+              </div>
+
+      <div class="list-group">
+        <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/sunny-buddy-solar-charger-v13-hookup-guide-/discuss">
+          Comments
+          <span class="badge">20</span>
+        </a>
+                  <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/sunny-buddy-solar-charger-v13-hookup-guide-/introduction">
+            View Paginated
+          </a>
+                <a class="list-group-item" href="#" onclick="window.print(); return false;">
+          Print
+        </a>
+      </div>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>Tags</b></li>
+        <li class="list-group-item"><ul class="tags-list">
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/hookup">Hookup</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/power">Power</a>  </li>
+</ul>
+</li>
+      </ul>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>License</b></li>
+        <li class="list-group-item">
+          <span class="sfe-icon-cc">
+            <span class="visuallyhidden">Creative Commons</span>
+          </span>
+          <small>tutorials are <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a></small>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
+
+      </div> <!-- /container -->
+    </div> <!-- /content -->
+
+    <footer>
+  <div class="container">
+
+  <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>About SparkFun</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/about-sparkfun">Read Our Story</a></li>
+            <li><a href="https://www.sparkfun.com/press-and-media">Press &amp; Media</a></li>
+            <li><a href="http://www.sparkfuneducation.com" target="_blank">SparkFun Education <span class="glyphicon glyphicon-new-window"></span></a></li>
+            <li><a href="https://www.sparkfun.com/jobs">Job Openings</a></li>
+          </ul>
+
+          <h3>Partner With Us</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/partner">See Our Partners</a></li>
+            <li><a href="https://www.sparkfun.com/services">View Our Services</a></li>
+            <li><a href="https://www.sparkfun.com/become-a-distributor">Become a Distributor/Reseller</a></li>
+            <li><a href="https://www.sparkfun.com/volume-sales">Receive Volume Discounts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/support">Customer Support</a></li>
+            <li><a href="https://www.sparkfun.com/payments">Purchase Order &amp; Payment Terms</a></li>
+            <li><a href="https://www.sparkfun.com/technical-assistance">Technical Assistance</a></li>
+            <li><a href="https://www.sparkfun.com/faq">FAQs</a></li>
+          </ul>
+          <h3>Site Information</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/terms">Terms Of Service</a></li>
+            <li><a href="https://www.sparkfun.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://www.sparkfun.com/compliance">Compliance</a></li>
+            <li><a href="https://www.sparkfun.com/sitemap">Site Map</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Subscribe</h3>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "2224003",
+              formId: "257ad1af-ab9e-4275-8788-cbad81cc229e"
+            });
+          </script>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>View Our Social Channels</h3>
+          <ul class="spew">
+            <li><a href="https://www.youtube.com/sparkfun" target="_blank" class="icon-social-youtube"><span class="sr-only">YouTube</span></a></li>
+            <li><a href="https://www.instagram.com/sparkfun/" target="_blank" class="icon-social-instagram"><span class="sr-only">Instagram</span></a></li>
+            <li><a href="https://www.github.com/sparkfun" target="_blank" class="icon-social-github"><span class="sr-only">GitHub</span></a></li>
+            <li><a href="https://www.facebook.com/SparkFun" target="_blank" class="icon-social-facebook"><span class="sr-only">Facebook</span></a></li>
+            <li><a href="https://twitter.com/sparkfun" target="_blank" class="icon-social-twitter"><span class="sr-only">Twitter</span></a></li>
+            <li><a href="https://www.sparkfun.com/feeds" class="icon-social-rss"><span class="sr-only">RSS</span></a></li>
+            <li><a href="https://www.tiktok.com/@sparkfun.electronics?lang=en" target="_blank" class="icon-social-tiktok"><span class="sr-only">TikTok</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- end .row -->
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <p class="copyleft">
+          <strong>SparkFun Electronics&nbsp;&reg;</strong>
+          <span class="hidden-xs hidden-sm">/</span>
+          <br class="visible-xs-inline visible-sm-inline"/>
+          6333 Dry Creek Parkway,
+          <br class="visible-xs-inline"/>
+          Niwot, CO 80503
+        </p>
+      </div>
+    </div><!-- end .row -->
+  </div><!-- end .container -->
+</footer>
+
+      </div><!-- end .wrapper-inner -->
+    </div><!-- end .wrapper -->
+
+    <script type="text/javascript">
+      var SFECONFIG = {
+        dnt: false,
+        http_server: 'http://learn.sparkfun.com',
+        https_server: 'https://learn.sparkfun.com',
+        http_static: 'https://cdn.sparkfun.com',
+        learn_server: 'https://learn.sparkfun.com',
+        news_server: 'https://news.sparkfun.com',
+        base_url: '/',
+        url: '/',
+        controller: 'tutorials',
+        action: 'view',
+        entity_id: '',
+        auth: false,
+        sparkrev: '1753213525',
+        search_key: 'search-sngw3quge7ojic1tgr4eft5c',
+        search_url: 'https://sparkfun-electronics.ent.us-central1.gcp.cloud.es.io/api/as/v1/engines/sparkfun-01/search'
+      };
+    </script>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+      <script src="/js/learn-built.min.js?sparkrev=1753213525"></script>
+    
+    <script>
+      $.shared();
+      $('#learn').learn();
+      $('#learn').sfeutil();
+    </script>
+                            <script src="/js/tutorials-built.min.js?sparkrev=1753213525"></script>
+                                    <script>
+    var fbq = null;
+  </script>
+      
+          <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2224003.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+        <script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0046/4761.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  </script>
+      </body>
+</html>
