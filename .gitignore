@@ -8,7 +8,7 @@
 __pycache__/
 *.pyc
 .DS_Store
-./data/
+./data/*
 ./img2sch/Data Label/fail.csv
 ./img2sch/Data Label/test.png
 ./img2sch/.DS_Store
