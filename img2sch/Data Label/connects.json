@@ -1,82 +1,12 @@
 [
   {
     "gate": "G$1",
-    "pin": "!OE",
-    "pad": "9"
-  },
-  {
-    "gate": "G$1",
-    "pin": "A1",
-    "pad": "3"
-  },
-  {
-    "gate": "G$1",
-    "pin": "A2",
-    "pad": "4"
-  },
-  {
-    "gate": "G$1",
-    "pin": "A3",
-    "pad": "5"
-  },
-  {
-    "gate": "G$1",
-    "pin": "A4",
-    "pad": "6"
-  },
-  {
-    "gate": "G$1",
-    "pin": "B1",
-    "pad": "14"
-  },
-  {
-    "gate": "G$1",
-    "pin": "B2",
-    "pad": "13"
-  },
-  {
-    "gate": "G$1",
-    "pin": "B3",
-    "pad": "12"
-  },
-  {
-    "gate": "G$1",
-    "pin": "B4",
-    "pad": "11"
-  },
-  {
-    "gate": "G$1",
-    "pin": "DIR1",
+    "pin": "1",
     "pad": "1"
   },
   {
     "gate": "G$1",
-    "pin": "DIR2",
+    "pin": "2",
     "pad": "2"
-  },
-  {
-    "gate": "G$1",
-    "pin": "DIR3",
-    "pad": "7"
-  },
-  {
-    "gate": "G$1",
-    "pin": "DIR4",
-    "pad": "8"
-  },
-  {
-    "gate": "G$1",
-    "pin": "GND",
-    "pad": "10"
-  },
-  {
-    "gate": "G$1",
-    "pin": "VCCA",
-    "pad": "16"
-  },
-  {
-    "gate": "G$1",
-    "pin": "VCCB",
-    "pad": "15"
   }
 ]
