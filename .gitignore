@@ -13,3 +13,13 @@ __pycache__/
 ./img2sch/Data Label/test.png
 ./img2sch/.DS_Store
 *.png
+*.csv
+*.json
+./img2sch/Data Label/*.csv
+./img2sch/Data Label/*.png
+./img2sch/Data Label/*.json
+./img2sch/Data Label/full sch unzip/*
+./img2sch/Data Label/full sch unzip/.DS_Store
+*.txt
+/data
+./img2sch/Data Label/*.bak
